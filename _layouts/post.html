@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post">
   <header class="post__head">
-    <div class="eyebrow"><a href="/blogg/">Blogg</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d. %B %Y" }}</time></div>
+    <div class="eyebrow"><a href="/blogg/">Blogg</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{% assign m = page.date | date: "%-m" | minus: 1 %}{% assign months = "januar,februar,mars,april,mai,juni,juli,august,september,oktober,november,desember" | split: "," %}{{ page.date | date: "%-d" }}. {{ months[m] }} {{ page.date | date: "%Y" }}</time></div>
     <h1 class="post__title">{{ page.title }}</h1>
   </header>
   <div class="prose">
