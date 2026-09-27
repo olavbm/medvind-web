@@ -80,3 +80,32 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .hero { padding: 72px 0 64px; }
   .hero__body, .services, .people { grid-column: 1 / -1; }
 }
+
+/* Blogg */
+.hero--small { padding: 80px 0 56px; display: flex; flex-direction: column; }
+.display--small { font-size: clamp(36px, 5vw, 64px); }
+.post-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 40px; max-width: 720px; }
+.post-list__item { display: grid; grid-template-columns: 110px 1fr; gap: 24px; align-items: baseline; }
+.post-list__item time { font-size: 13px; color: var(--accent); }
+.post-list__item h2 { font-family: var(--font-display); font-weight: 600; font-size: 24px; line-height: 1.2; letter-spacing: -.02em; margin: 0 0 8px; }
+.post-list__item h2 a { text-decoration: none; }
+.post-list__item h2 a:hover { text-decoration: underline; }
+.post-list__item p { font-size: 16px; line-height: 1.55; color: var(--muted); margin: 0; text-wrap: pretty; }
+.post { padding: 80px 0 96px; max-width: 720px; }
+.post__head { display: flex; flex-direction: column; gap: 20px; margin-bottom: 40px; }
+.post__head .eyebrow a { color: inherit; text-decoration: none; }
+.post__title { font-family: var(--font-display); font-weight: 600; font-size: clamp(36px, 5vw, 64px); line-height: 1.05; letter-spacing: -.035em; margin: 0; text-wrap: balance; }
+.prose { font-size: 17px; line-height: 1.6; color: var(--ink-soft); }
+.prose p, .prose ul, .prose ol, .prose pre, .prose blockquote { margin: 0 0 1.25em; }
+.prose h2 { font-family: var(--font-display); font-weight: 600; font-size: 28px; line-height: 1.15; letter-spacing: -.02em; margin: 2em 0 .6em; color: var(--ink); }
+.prose h3 { font-size: 20px; font-weight: 600; margin: 1.6em 0 .5em; color: var(--ink); }
+.prose li { margin-bottom: .35em; }
+.prose code { font-family: var(--font-mono); font-size: .9em; background: var(--paper-bright); padding: .1em .35em; border-radius: 2px; }
+.prose pre { font-family: var(--font-mono); font-size: 14px; line-height: 1.5; background: var(--ink); color: var(--paper-bright); padding: 20px 24px; border-radius: 2px; overflow-x: auto; }
+.prose pre code { background: none; padding: 0; font-size: inherit; }
+.prose blockquote { border-left: 2px solid var(--accent); padding-left: 20px; color: var(--muted); }
+.prose img { max-width: 100%; height: auto; border-radius: 2px; }
+@media (max-width: 720px) {
+  .hero--small { padding: 56px 0 40px; }
+  .post-list__item { grid-template-columns: 1fr; gap: 6px; }
+}

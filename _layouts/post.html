@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post__head">
+    <div class="eyebrow"><a href="/blogg/">Blogg</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d. %B %Y" }}</time></div>
+    <h1 class="post__title">{{ page.title }}</h1>
+  </header>
+  <div class="prose">
+{{ content }}
+  </div>
+</article>

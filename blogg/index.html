@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blogg
+description: Notater fra Medvind Utvikling om arkitektur, plattform og maskinlæring.
+---
+<section class="hero hero--small">
+  <div class="eyebrow">Blogg</div>
+  <h1 class="display display--small">Notater fra <em>arbeidsbenken</em>.</h1>
+  <p class="lede">Om arkitektur, plattform og maskinlæring. Skrevet når det er noe å si.</p>
+</section>
+
+<section class="section">
+  <ul class="post-list">
+  {% for post in site.posts %}
+    <li class="post-list__item">
+      <time class="mono" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <div>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

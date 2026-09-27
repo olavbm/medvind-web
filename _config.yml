@@ -1,0 +1,6 @@
+title: Medvind Utvikling AS
+url: https://medvind.eu
+lang: nb
+permalink: /blogg/:year/:month/:day/:title/
+markdown: kramdown
+exclude: [README.md]
