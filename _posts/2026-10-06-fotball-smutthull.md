@@ -1,5 +1,5 @@
 ---
-title: "Kan agenter lære seg fotball? Første uke med 2 mot 2"
+title: "Fotball og maskinlæring"
 ---
 Velkommen til det første tekniske innlegget her på bloggen! Det handler om forsterkningslæring, som jeg har brukt mye av fritiden min på i det siste.
 
