@@ -49,3 +49,32 @@ Nå kjører en liga, inspirert av AlphaStar. Hovedlaget får selskap av en motst
 
 Virker det, blir det mer undersøkning om hvorfor og hvordan. Samt kanskje ett blogginnnlegg til.
 Takk for kampen.
+
+## Tidligere arbeid
+
+Lite av dette er nytt. Her er arbeidet jeg har lent meg på:
+
+**Algoritmer**
+
+- Schulman mfl. (2017): [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347). PPO.
+- de Witt mfl. (2020): [Is Independent Learning All You Need in the StarCraft Multi-Agent Challenge?](https://arxiv.org/abs/2011.09533). IPPO.
+- Yu mfl. (2022): [The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games](https://arxiv.org/abs/2103.01955). MAPPO, og at den ikke skiller seg fra IPPO når alle ser hele banen.
+
+**Verktøy**
+
+- Bettini mfl. (2022): [VMAS: A Vectorized Multi-Agent Simulator for Collective Robot Learning](https://arxiv.org/abs/2207.03530)
+- Bettini mfl. (2023): [BenchMARL: Benchmarking Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2312.01472)
+- Bou mfl. (2023): [TorchRL: A data-driven decision-making library for PyTorch](https://arxiv.org/abs/2306.00577)
+
+**Fotball**
+
+- Kurach mfl. (2019): [Google Research Football: A Novel Reinforcement Learning Environment](https://arxiv.org/abs/1907.11180)
+- Liu mfl. (2019): [Emergent Coordination Through Competition](https://arxiv.org/abs/1902.07151). DeepMinds 2 mot 2, det nærmeste forbildet.
+- Liu mfl. (2021): [From Motor Control to Team Play in Simulated Humanoid Football](https://arxiv.org/abs/2105.12196)
+- Lin mfl. (2023): [TiZero: Mastering Multi-Agent Football with Curriculum Learning and Self-Play](https://arxiv.org/abs/2302.07515). 11 mot 11 med en trapp av motstandere, som min.
+
+**Selvspill og ligaer**
+
+- Bansal mfl. (2017): [Emergent Complexity via Multi-Agent Competition](https://arxiv.org/abs/1710.03748)
+- Berner mfl. (2019): [Dota 2 with Large Scale Deep Reinforcement Learning](https://arxiv.org/abs/1912.06680). OpenAI Five.
+- Vinyals mfl. (2019): [Grandmaster level in StarCraft II using multi-agent reinforcement learning](https://doi.org/10.1038/s41586-019-1724-z). AlphaStar og ligaen.
