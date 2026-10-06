@@ -7,7 +7,7 @@ Drømmen er å trene hele fotballag, 5 mot 5 eller 11 mot 11, og se om formasjon
 
 ## Oppsett
 
-Banen er football-scenarioet i [VMAS](https://github.com/proroklab/VectorizedMultiAgentSimulator), en enkel 2D-simulator. Et mål gir 100 poeng, og laget får litt ekstra drahjelp når ballen beveger seg mot riktig mål. Hver kamp varer i 500 steg.
+Miljøet er football-scenarioet i [VMAS](https://github.com/proroklab/VectorizedMultiAgentSimulator), en enkel 2D-simulator. Et mål gir 100 poeng, og laget får litt ekstra drahjelp når ballen beveger seg mot riktig mål. Hver kamp varer i 500 steg.
 
 Jeg trener med [BenchMARL](https://github.com/facebookresearch/BenchMARL), som bygger på [TorchRL](https://github.com/pytorch/rl), på én GPU, med 4096 kamper som går parallelt. Motstanderen er en ferdigskrevet bot som jeg skrur gradvis opp fra stillestående til full styrke, 50M frames per trinn. Uten den trappen kom laget aldri i gang.
 
